@@ -37,7 +37,7 @@ const Header: FC<IProps> = ({login, setLogin}) => {
                                     <span className="visually-hidden">Profile</span>
                                     <img src={profileIcon} alt="profile icon"/>
                                     <ul className="profile-nav__list">
-                                        <li className="profile-nav__item profile-nav__username">{login ?? 'Unlogined User'}</li>
+                                        <li className="profile-nav__item profile-nav__username">{login ?? 'Unknown User'}</li>
                                         <li className="profile-nav__item">
                                             <button onClick={logOut} className="profile-nav__sign-out button">
                                                 Sign Out

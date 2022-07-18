@@ -20,7 +20,7 @@ const SignIn: FC<IProps> = ({setLogin}) => {
             <h1 className="visually-hidden">Travel App</h1>
             <form className="sign-in-form" autoComplete="off" onSubmit={e => onSubmitForm(e, loginValue)}>
                 <h2 className="sign-in-form__title">Sign In</h2>
-                <MyInput name={'email'} type={'email'} labelText={'Email'} value={loginValue}
+                <MyInput name={'email'} type={'email'} labelText={'Email'} value={'Unknown user'}
                          onChange={e => setEmail(e)}/>
                 <MyInput name={'password'} type={'password'} labelText={'Email'} value={password}
                          onChange={e => setPass(e)}/>

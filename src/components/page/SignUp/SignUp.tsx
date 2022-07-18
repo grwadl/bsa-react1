@@ -20,7 +20,7 @@ const SignUp: FC<IProps> = ({setLogin}) => {
     return (
         <main className="sign-up-page">
             <h1 className="visually-hidden">Travel App</h1>
-            <form className="sign-up-form" autoComplete="off" onSubmit={e => onSubmitForm(e, loginValue)}>
+            <form className="sign-up-form" autoComplete="off" onSubmit={e => onSubmitForm(e, fullName)}>
                 <h2 className="sign-up-form__title">Sign Up</h2>
                 <MyInput name={'full-name'} type={'text'} labelText={'Full name'} value={fullName}
                          onChange={e => setName(e)}/>
